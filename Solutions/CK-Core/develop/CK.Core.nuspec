@@ -5,6 +5,7 @@
     <version>4.0.0-develop</version>
     <authors>Invenietis</authors>
     <owners>Invenietis</owners>
+    <copyright>Invenietis &amp; In'Tech Info</copyright>
     <licenseUrl>http://www.gnu.org/licenses/lgpl.html</licenseUrl>
     <projectUrl>https://github.com/Invenietis/ck-core</projectUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
