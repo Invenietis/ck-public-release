@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <metadata xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <id>CK.Core</id>
+    <version>4.0.0-develop</version>
+    <authors>Invenietis</authors>
+    <owners>Invenietis</owners>
+    <licenseUrl>http://www.gnu.org/licenses/lgpl.html</licenseUrl>
+    <projectUrl>https://github.com/Invenietis/ck-core</projectUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>A set of utility interfaces and classes.</description>
+    <language>en-US</language>
+
+	<dependencies> 
+   		<group targetFramework="net40">
+      			<dependency id="Microsoft.Bcl" version="1.1.6" />
+      			<dependency id="Microsoft.Bcl.Build" version="1.0.13" />
+   		</group>
+   		<group targetFramework="net45">
+   		</group>
+	</dependencies>
+
+  </metadata>
+  <files>	
+	<file src="net40\CK.Core\bin\Debug\CK.Core.dll" target="lib\net40" />		
+	<file src="net40\CK.Core\bin\Debug\CK.Core.pdb" target="lib\net40" />
+	<file src="net40\CK.Core\bin\Release\CK.Core.xml" target="lib\net40" />
+	
+	<file src="CK.Core\bin\Debug\CK.Core.dll" target="lib\net45" />		
+	<file src="CK.Core\bin\Debug\CK.Core.pdb" target="lib\net45" />
+	<file src="CK.Core\bin\Release\CK.Core.xml" target="lib\net45" />
+  </files>
+</package>
