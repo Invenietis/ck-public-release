@@ -12,17 +12,16 @@
     <description>Helpers for interoperability.</description>
     <language>en-US</language>
 
-	<dependencies> 
-   		<group targetFramework="net40">
-      			<dependency id="Microsoft.Bcl" version="1.1.6" />
-      			<dependency id="Microsoft.Bcl.Build" version="1.0.13" />
-   		</group>
-   		<group targetFramework="net45">
-   		</group>
-   		<group>
-      			<dependency id="CK.Reflection" version="4.0.0-develop" />
-   		</group>
-	</dependencies>
+    <dependencies> 
+   	  <group targetFramework="net40">
+      	    <dependency id="Microsoft.Bcl" version="1.1.6" />
+      	    <dependency id="Microsoft.Bcl.Build" version="1.0.13" />
+	    <dependency id="CK.Reflection" version="4.0.0-develop" />
+   	  </group>
+   	  <group targetFramework="net45">
+   	    <dependency id="CK.Reflection" version="4.0.0-develop" />
+	  </group>
+     </dependencies>
 
   </metadata>
   <files>

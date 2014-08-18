@@ -2,7 +2,7 @@
 <package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <metadata xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <id>CK.Monitoring</id>
-    <version>4.0.0-develop</version>
+    <version>4.0.0-develop2</version>
     <authors>Invenietis</authors>
     <owners>Invenietis</owners>
     <copyright>Invenietis</copyright>
@@ -16,10 +16,9 @@
    		<group targetFramework="net40">
       			<dependency id="Microsoft.Bcl" version="1.1.6" />
       			<dependency id="Microsoft.Bcl.Build" version="1.0.13" />
+			<dependency id="CK.Core" version="4.0.0-develop" />
    		</group>
    		<group targetFramework="net45">
-   		</group>
-   		<group>
 			<dependency id="CK.Core" version="4.0.0-develop" />
    		</group>
 	</dependencies>
