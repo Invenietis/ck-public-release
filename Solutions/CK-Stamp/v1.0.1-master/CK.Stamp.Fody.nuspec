@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>CK.Stamp.Fody</id>
+    <version>1.0.1</version>
+    <title>CK.Stamp.Fody</title>
+    <authors>Simon Cropp, Invenietis</authors>
+    <owners>Invenietis</owners>
+
+<developmentDependency>true</developmentDependency>
+
+    <licenseUrl>http://www.opensource.org/licenses/mit-license.php</licenseUrl>
+    <projectUrl>http://github.com/Invenietis/Stamp</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Fork of Simon Cropp's Stamp.Fody (http://github.com/Fody/Stamp). Stamps an assembly with git information.</description>
+    <language>en-US</language>
+    <tags>Git, Versioning, ILWeaving, Fody, Stamp, Cecil</tags>
+    <dependencies>
+      <dependency id="Fody" />
+  </dependencies>
+</metadata>
+<files>
+    <file src="CK.Stamp.Fody\bin\Release\CK.Stamp.Fody-merged.dll" target="CK.Stamp.Fody.dll" />
+    <file src="CK.Stamp.Fody\bin\Release\verpatch.exe" target="" />
+
+    <file src="CK.Stamp.Fody\bin\Release\NativeBinaries\amd64\*.dll" target="NativeBinaries\amd64" />
+    <file src="CK.Stamp.Fody\bin\Release\NativeBinaries\x86\*.dll" target="NativeBinaries\x86" />
+
+    <file src="CK.Stamp.Fody\NugetAssets\Fody_ToBeDeleted.txt" target="Content\" />
+    
+    <file src="CK.Stamp.Fody\NugetAssets\install.ps1" target="Tools\" />
+    <file src="CK.Stamp.Fody\NugetAssets\uninstall.ps1" target="Tools\" />
+</files>
+</package>

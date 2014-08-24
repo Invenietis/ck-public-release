@@ -4,8 +4,8 @@ $nuGet = $env:LOCALAPPDATA + "\NuGet\nuget.exe"
 $releaseDir = [System.IO.Path]::GetDirectoryName( $MyInvocation.MyCommand.Path );
 $solutionDir = [System.IO.Path]::GetDirectoryName( $releaseDir )
 
-if( !(Test-Path $releaseDir\Packages) ) {
-    New-Item $releaseDir\Packages -ItemType Directory
+if( !(Test-Path $releaseDir\Output) ) {
+    New-Item $releaseDir\Output -ItemType Directory
 }
 
 write "Packaging .nuspec in "$releaseDir"..."
@@ -15,5 +15,5 @@ Get-ChildItem $releaseDir\*.nuspec | foreach ($_) `
                         param([String]$Script, [string]$NuSpec, [string]$BasePath, [string]$OutDir ) `
                         &$Script pack $NuSpec -BasePath $BasePath -Output $OutDir `
                    } `
-                   -ArgumentList $nuGet, $_.fullname, $solutionDir, $releaseDir\Packages
+                   -ArgumentList $nuGet, $_.fullname, $solutionDir, $releaseDir\Output
 }   

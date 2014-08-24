@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>CK.Stamp.Fody</id>
-    <version>1.0.0-develop</version>
+    <version>1.0.1-develop</version>
     <title>CK.Stamp.Fody</title>
     <authors>Simon Cropp, Invenietis</authors>
     <owners>Invenietis</owners>
@@ -20,16 +20,16 @@
   </dependencies>
 </metadata>
 <files>
-    <file src="Fody\bin\Release\CK.Stamp.Fody-merged.dll" target="CK.Stamp.Fody.dll" />
-    <file src="Fody\bin\Release\CK.Stamp.Fody-merged.pdb" target="CK.Stamp.Fody.pdb" />
-    <file src="Fody\bin\Release\verpatch.exe" target="" />
+    <file src="CK.Stamp.Fody\bin\Release\CK.Stamp.Fody-merged.dll" target="CK.Stamp.Fody.dll" />
+    <file src="CK.Stamp.Fody\bin\Release\CK.Stamp.Fody-merged.pdb" target="CK.Stamp.Fody.pdb" />
+    <file src="CK.Stamp.Fody\bin\Release\verpatch.exe" target="" />
 
-    <file src="Fody\bin\Release\NativeBinaries\amd64\*.dll" target="NativeBinaries\amd64" />
-    <file src="Fody\bin\Release\NativeBinaries\x86\*.dll" target="NativeBinaries\x86" />
+    <file src="CK.Stamp.Fody\bin\Release\NativeBinaries\amd64\*.dll" target="NativeBinaries\amd64" />
+    <file src="CK.Stamp.Fody\bin\Release\NativeBinaries\x86\*.dll" target="NativeBinaries\x86" />
 
-    <file src="Fody\NugetAssets\Fody_ToBeDeleted.txt" target="Content\" />
+    <file src="CK.Stamp.Fody\NugetAssets\Fody_ToBeDeleted.txt" target="Content\" />
     
-    <file src="Fody\NugetAssets\install.ps1" target="Tools\" />
-    <file src="Fody\NugetAssets\uninstall.ps1" target="Tools\" />
+    <file src="CK.Stamp.Fody\NugetAssets\install.ps1" target="Tools\" />
+    <file src="CK.Stamp.Fody\NugetAssets\uninstall.ps1" target="Tools\" />
 </files>
 </package>
