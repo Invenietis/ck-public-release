@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>CK.Javascript</id>
+        <version>1.2.0</version>
+        <authors>Invenietis</authors>
+        <owners>Invenietis</owners>
+        <copyright>Invenietis</copyright>
+    	<licenseUrl>http://www.gnu.org/licenses/lgpl.html</licenseUrl>
+    	<projectUrl>https://github.com/Invenietis/ck-javascript</projectUrl>
+        <requireLicenseAcceptance>true</requireLicenseAcceptance>
+        <summary>Super light (51KB) Javascript-like expression interpreter in C#.</summary>	
+	<description>
+This small library implements a recursive descent parser that handles javascript expressions.
+Its goal is not to evolve as a full javascript runner but to be an alternative to heavier solutions
+when the only need is to rely on expressions (that may interact with plain .Net objects).
+Typical use is for (clean) databinding (think to Angular.js expressions).
+	</description>
+        <dependencies>
+            <dependency id="CK.Core" version="4.0.1" />
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="CK.Javascript\bin\Release\CK.Javascript.dll" target="lib\net45" />
+        <file src="CK.Javascript\bin\Release\CK.Javascript.pdb" target="lib\net45" />
+        <file src="CK.Javascript\bin\Release\CK.Javascript.xml" target="lib\net45" />
+    </files>
+</package>
